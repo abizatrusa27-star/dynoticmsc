@@ -1,98 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Submission Status - BBHC INFINTY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynotic Music - Distribusi Musik Modern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            background: "#0f1117",
-            surface: "#1a1c23",
-            border: "#2a2d35",
-            accent: "#3B82F6",
-            textPrimary: "#f1f5f9",
-            textSecondary: "#94a3b8",
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          }
-        }
-      }
-    };
-  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-background text-textPrimary font-sans min-h-screen flex items-start justify-center p-4">
+<body class="font-inter bg-white text-gray-900">
 
-  <!-- Garis Tiga -->
-  <div class="absolute top-4 left-4">
-    <button>
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-textSecondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </div>
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 bg-white shadow-sm">
+    <h1 class="text-2xl font-bold text-purple-600">Dynotic Music</h1>
+    <nav class="space-x-6">
+      <a href="#layanan" class="hover:text-purple-500">Layanan</a>
+      <a href="#fitur" class="hover:text-purple-500">Fitur</a>
+      <a href="#kontak" class="hover:text-purple-500">Kontak</a>
+      <a href="login.html" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Login</a>
+    </nav>
+  </header>
 
-  <!-- Icon Profil -->
-  <div class="absolute top-4 right-4">
-    <button>
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-textSecondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c3.866 0 7 1.79 7 4v2H5v-2c0-2.21 3.134-4 7-4z" />
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 100-8 4 4 0 000 8z" />
-      </svg>
-    </button>
-  </div>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Distribusikan Musikmu ke Seluruh Dunia</h2>
+    <p class="text-lg mb-6">Rilis lagu ke Spotify, Apple Music, YouTube, dan ratusan platform lainnya dengan cepat dan mudah.</p>
+    <a href="#form-cta" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Mulai Rilis Lagu</a>
+  </section>
 
-  <!-- Kontainer Submission -->
-  <div class="bg-surface rounded-2xl shadow-xl w-full max-w-screen-lg p-6 md:p-10 mt-24 border border-border">
-
-    <div class="mb-6">
-      <h2 class="text-xl font-semibold text-white flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+  <!-- Layanan -->
+  <section id="layanan" class="py-16 px-8 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12">Layanan Kami</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+        <svg class="w-12 h-12 mx-auto text-purple-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6h13M9 6H6v13h13" />
         </svg>
-        Submission Status: Not Approved
-      </h2>
-      <p class="text-sm text-textSecondary mt-1 leading-relaxed">
-        Your release could not be processed due to rights-related concerns.
-      </p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 gap-6">
-      <div>
-        <p class="text-xs text-textSecondary">Artist</p>
-        <p class="text-sm font-medium">Noowoii</p>
+        <h4 class="text-xl font-semibold mb-2">Rilis Tak Terbatas</h4>
+        <p>Upload dan rilis lagu sebanyak yang kamu mau tanpa biaya tambahan per lagu.</p>
       </div>
-
-      <div>
-        <p class="text-xs text-textSecondary">Track Title</p>
-        <p class="text-sm font-medium break-words">BBHC INFINTY</p>
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+        <svg class="w-12 h-12 mx-auto text-purple-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 16h10M5 12h14" />
+        </svg>
+        <h4 class="text-xl font-semibold mb-2">Distribusi Global</h4>
+        <p>Jangkau lebih dari 200 negara dan ratusan platform musik digital.</p>
       </div>
-
-      <div>
-        <p class="text-xs text-textSecondary">Status</p>
-        <span class="inline-block px-3 py-1 text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-400/30 rounded-full">
-          Not Approved
-        </span>
-      </div>
-
-      <div class="sm:col-span-2">
-        <p class="text-xs text-textSecondary">Reason</p>
-        <div class="mt-2 p-4 bg-border/20 border border-accent/30 rounded-lg text-sm text-textPrimary leading-relaxed">
-          Our system detected that this track includes content claimed by a third party. To proceed with distribution, please ensure you have the full rights to all elements of the track including samples, vocals, and instrumentals.
-        </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+        <svg class="w-12 h-12 mx-auto text-purple-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V7h2v4h4v2h-4v4h-2v-4H7v-2h4z" />
+        </svg>
+        <h4 class="text-xl font-semibold mb-2">Monetisasi</h4>
+        <p>Dapatkan royalti dari YouTube, Instagram, TikTok, dan banyak lagi.</p>
       </div>
     </div>
+  </section>
 
-    <div class="mt-6 text-center">
-      <button onclick="alert('Redirecting to edit page...')" class="w-full sm:w-auto bg-accent hover:bg-blue-600 text-white font-medium px-6 py-2 rounded-lg transition">
-        Edit Submission
-      </button>
+  <!-- Fitur -->
+  <section id="fitur" class="bg-gray-50 py-16 px-8">
+    <h3 class="text-3xl font-bold text-center mb-12">Fitur Unggulan</h3>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Analitik Real-time</h4>
+        <p>Pantau performa musikmu di semua platform dalam satu dashboard modern.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Pembayaran Cepat</h4>
+        <p>Tarik royalti kapan saja langsung ke rekening atau e-wallet kamu.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Tanpa Biaya Tahunan</h4>
+        <p>Bayar sekali untuk rilis lagu, nikmati royalti selamanya.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Dukungan 24/7</h4>
+        <p>Tim support siap membantu kapan saja melalui chat & email.</p>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <!-- CTA Form -->
+  <section id="form-cta" class="py-16 px-8 max-w-lg mx-auto text-center">
+    <h3 class="text-2xl font-bold mb-6">Daftar & Mulai Rilis Lagu</h3>
+    <form action="register.html" method="GET" class="space-y-4">
+      <input type="text" name="nama" placeholder="Nama Lengkap" class="w-full px-4 py-2 border rounded-lg" required>
+      <input type="email" name="email" placeholder="Email" class="w-full px-4 py-2 border rounded-lg" required>
+      <input type="password" name="password" placeholder="Password" class="w-full px-4 py-2 border rounded-lg" required>
+      <button type="submit" class="w-full bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Daftar Sekarang</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak" class="bg-white border-t py-8 px-8 text-center">
+    <p class="mb-2">© 2025 Dynotic Music. All rights reserved.</p>
+    <p>Email: <a href="mailto:support@dynoticmusic.com" class="text-purple-600 hover:underline">support@dynoticmusic.com</a> | 
+    Instagram: <a href="https://instagram.com/dynoticmusic" target="_blank" class="text-purple-600 hover:underline">@dynoticmusic</a></p>
+  </footer>
+
 </body>
 </html>
