@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submission Status - BBHC INFINTY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: "#0f1117",
+            surface: "#1a1c23",
+            border: "#2a2d35",
+            accent: "#3B82F6",
+            textPrimary: "#f1f5f9",
+            textSecondary: "#94a3b8",
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background text-textPrimary font-sans min-h-screen flex items-start justify-center p-4">
+
+  <!-- Garis Tiga -->
+  <div class="absolute top-4 left-4">
+    <button>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-textSecondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Icon Profil -->
+  <div class="absolute top-4 right-4">
+    <button>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-textSecondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c3.866 0 7 1.79 7 4v2H5v-2c0-2.21 3.134-4 7-4z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 100-8 4 4 0 000 8z" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Kontainer Submission -->
+  <div class="bg-surface rounded-2xl shadow-xl w-full max-w-screen-lg p-6 md:p-10 mt-24 border border-border">
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold text-white flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+        </svg>
+        Submission Status: Not Approved
+      </h2>
+      <p class="text-sm text-textSecondary mt-1 leading-relaxed">
+        Your release could not be processed due to rights-related concerns.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div>
+        <p class="text-xs text-textSecondary">Artist</p>
+        <p class="text-sm font-medium">Noowoii</p>
+      </div>
+
+      <div>
+        <p class="text-xs text-textSecondary">Track Title</p>
+        <p class="text-sm font-medium break-words">BBHC INFINTY</p>
+      </div>
+
+      <div>
+        <p class="text-xs text-textSecondary">Status</p>
+        <span class="inline-block px-3 py-1 text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-400/30 rounded-full">
+          Not Approved
+        </span>
+      </div>
+
+      <div class="sm:col-span-2">
+        <p class="text-xs text-textSecondary">Reason</p>
+        <div class="mt-2 p-4 bg-border/20 border border-accent/30 rounded-lg text-sm text-textPrimary leading-relaxed">
+          Our system detected that this track includes content claimed by a third party. To proceed with distribution, please ensure you have the full rights to all elements of the track including samples, vocals, and instrumentals.
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 text-center">
+      <button onclick="alert('Redirecting to edit page...')" class="w-full sm:w-auto bg-accent hover:bg-blue-600 text-white font-medium px-6 py-2 rounded-lg transition">
+        Edit Submission
+      </button>
+    </div>
+
+  </div>
+</body>
+</html>
